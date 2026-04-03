@@ -1,0 +1,71 @@
+<!-- Task 5: Create a basic html form -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Form</title>
+  <style type="text/css" media="all">
+    div {
+      margin: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Registration Form</h2>
+  <form action="/action_page.php" method="get" accept-charset="utf-8">
+    <div>
+      <label for="uname">Username: </label>
+      <input type="text" name="uname" id="uname" value="user" />
+    </div>
+    
+    <input type="hidden" name="uid" id="uid" value="6547">
+    
+    <div>
+      <label for="pass">Password: </label>
+      <input type="password" name="pass" id="pass" required>
+    </div>
+    
+    <div>
+      <label>Gender: </label>
+      <input type="radio" name="gen" id="male" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gen" id="female" value="female" />
+      <label for="female">Female</label>
+    </div>
+    
+    <div>
+      <label for="sub">Subjects:- </label> <br />
+      <input type="checkbox" name="sub1" id="sub1" value="Physics">
+      <label for="sub1">Physics</label> <br />
+      <input type="checkbox" name="sub2" id="sub2" value="Chemistry">
+      <label for="sub2">Chemistry</label> <br />
+      <input type="checkbox" name="sub3" id="sub3" value="Math">
+      <label for="sub3">Math</label>
+    </div>
+    
+    <div>
+      <label for="branch">Branch: </label <select name="branch" id="branch">
+      <option value="Civil">Civil</option>
+      <option value="Electrical">Electrical</option>
+      <option value="CSE">CSE</option>
+      </select>
+    </div>
+    
+    <div>
+      <label for="idcard">Upload ID Card: </label>
+      <input type="file" name="idcard" id="idcard">
+    </div>
+    
+    <div>
+      <label for="remarks">Remarks: </label>
+      <textarea name="remarks" id="remarks" cols="30" rows="10">None</textarea>
+    </div>
+    
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+</body>
+
+</html>
